@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eurotwitter</title>
     <style>
+        .wrapper{
+             margin:2em; 
+            text-align: center;
+        }
+        body{margin: 0px; padding:0px;}
         ul { list-style-type: none; }
        div.header{ 
-            background-color: #003399; color:#FFCC00; height:10vh;
+            background-color: #003399; color:#FFCC00; 
+            padding: .5em;
+             margin: 1em;
             text-shadow: black 2px 2px 5px;
+            border-radius: 2em;
         }
-      div.ascii-image{
-        font-size: 1.5vh;
-      }
+      /* div.ascii-image{
+        font-size: .5vh;
+      } */
       div.trade-offer {
         background-image: linear-gradient(#710ce0, black); ;
         color: #df8e80;
-        width: :fit-content;
+        width: fit-content;
+        font-size:1vw
       }
       div.trade-container {
         flex: content;
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: space-around
       }
       span.caution {
         color:gold;
@@ -30,11 +41,11 @@
       }
       div.offer {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        width: 15vw;
         height: fit-content;
         color:black;
-        text-shadow: red 2px 2px 5px;
-        text-align: center;
+        text-shadow: red 2px 1px 5px;
+        text-align: left;
+        font-size: 3vw;
       }
       div.trade-offer-label{
         font-size: 5vh;
@@ -42,13 +53,11 @@
         color:white;
         text-align: center;
       }
-      div.trade-container-center{
-        width: 50%;
-        margin: auto;
-      }
     </style>
 </head>
 <body>
+<div class="wrapper">
+
         <div class="header">
             <h1>
             Eurotwitter
@@ -61,7 +70,8 @@
     <a href="https://twitter.com/CarlBurks">
         https://twitter.com/CarlBurks
     </a>
-    <br/>
+</div>
+<br/>
 
     <br/>
 
@@ -71,7 +81,7 @@
     </div>
     <div class="trade-container">
     <div class="offer">
-        <div class="trade-header">I RECEIVE</div>
+        <div class="trade-header">I RECEIVE:</div>
         <ul>
             <li>
                 Tesla Model 3
@@ -115,7 +125,7 @@ c::;''''''''''''',,'..          ..'''''''''',,,,
     </pre>
 </div>
 <div class="offer">
-    <div class="trade-header">YOU RECEIVE</div>
+    <div class="trade-header">YOU RECEIVE:</div>
     <ul>
         <li>
             This domain
