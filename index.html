@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eurotwitter</title>
-</head>
-<body>
-<h1>Nothing to see here</h1>
+    <style>
+        .pulse {
+            animation: pulse-animation 5s infinite;
+        }
 
+        @keyframes pulse-animation {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+                border-radius: 2em;
+                box-shadow: red 2px 2px 5px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .wrapper {
+            margin: 2em;
+            text-align: center;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        div.header {
+            background-color: #003399;
+            color: #FFCC00;
+            padding: .5em;
+            margin: 1em;
+            text-shadow: black 2px 2px 5px;
+            border-radius: 2em;
+        }
+
+        /* div.ascii-image{
+        font-size: .5vh;
+      } */
+        div.trade-offer {
+            background-image: linear-gradient(#710ce0, black);
+            color: #df8e80;
+            width: fit-content;
+            font-size: 1vw
+        }
+
+        div.trade-container {
+            flex: content;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around
+        }
+
+        span.caution {
+            color: gold;
+            background-color: black;
+        }
+
+        div.offer {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            height: fit-content;
+            color: black;
+            text-shadow: red 2px 1px 5px;
+            text-align: left;
+            font-size: 3vw;
+        }
+
+        div.trade-offer-label {
+            font-size: 5vh;
+            background-color: #FF4444;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>
+                Eurotwitter
+            </h1>
+        </div>
+        <h2>
+            Are you interested in purchasing this domain?
+        </h2>
+        Follow me at the completely unrelated an unaffiliated social media site twitter:
+        <a href="https://twitter.com/CarlBurks">
+            https://twitter.com/CarlBurks
+        </a>
+    </div>
+    <br />
+
+    <br />
+
+    <div class="trade-container-center">
+        <div class="trade-offer-label">
+            <span class="caution">⚠</span>TRADE OFFER<span class="caution">⚠</span>
+        </div>
+        <div class="trade-container">
+            <div class="offer">
+                <div class="trade-header">I RECEIVE:</div>
+                <ul>
+                    <li>
+                        Tesla Model 3
+                    </li>
+                    <li>
+                        $200,000 USD
+                    </li>
+                </ul>
+            </div>
+            <div class="ascii-image trade-offer pulse">
+                <pre>
+.......................'.. .'''''''''''...''''''
+.''''''''''''''''''''''','.....'''''''.'..''',,,
+c::;''''''''''''',,'..          ..'''''''''',,,,
+,,;cccc:;,''''''''.      .....    ...,,,''',,,;:
+,,,,,,,,:cccc:'..  .';;::cc:::;,.  :c:;,llcccccc
+,,,,,,,,,,,,,:c:. .;:cclllllcc:;'. .;;,,,,,,,,,,
+''''',,,,,,,,,,. .,;:cclooolc:;,'.. .,,,,,,,,,,,
+'''''',''',,,,,. .:lclccldccclcc;..  ',,,,,,,,,,
+',,''''''''',,'..,cc:;::cl;;:;;:c'.  .,,,,,,,,,,
+,,,,,''''''''',c;;cooooclo:cllll:,.;...,,,,,,,,,
+,,,,,,''''''''.,:,lodxdcdd:lxxol:.,:..',,,,,,,,,
+,,,,,''''''''.  .'clodo:cc:lddlc,.,. '''''''',',
+,,,,,'''''''.    .,cl:::cc;;:cc,.    ...''''.'..
+,,,,,''''''.      .colllcccclc:.      .....''.'.
+,,,,,'''''.        ';clodocc;'..       . .......
+,,,,,''''..       ;:,',;c;'...',         . .....
+,,,,''''''.      .okoc,,,''..,;c.      ..... .
+,,,''''......  ...dO0kl:::cclldc.      ....
+..................cOOO0xclxdkol:.        .
+'''''''''''''.....'xkxxodkk,oOd;.     ........
+,,,,,,''''''''.....cddx00d. 'oxk;.    ..........
+',,,,,,'''''......'ldOKkc;dxxkodkl.   ..........
+',,,'''''''......:dOKOlcdkOd:dkdoxc. ...........
+'''''''''''....cox0kookOkc,:c;oOkoo;............
+'''''''''....'ldkOodk0kc,'.'llclkkdl:...........
+''''''''....,lkOkdkkkl'','.'dc:ccdxoll..........
+'''''......;oxkxxkkd''',;,.,l;xo:;oxol:.........
+'........'coodxkO00o.':clodxx,;oolclxol;........
+........'lloddxkkxoodxkOOkxd,..'odo::olc,.......
+    </pre>
+            </div>
+            <div class="offer">
+                <div class="trade-header">YOU RECEIVE:</div>
+                <ul>
+                    <li>
+                        This domain
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+            An 💩<span
+                title="If you are interested and agree to the price please reply with a 💩 to confirm acceptance.">offer</span>
+            was accepted 03/27/2023 by an official twitter <span title="press@twitter.com">email address</span>.
+        </p>
+        <p>
+            🚗 More information soon! 🚗
+        </p>
+    </div>
+    <br />
+    <a style="position: fixed;right:1em;bottom:1em" href="https://www.twitter.com/CarlBurks">π</a>
 </body>
+
 </html>
