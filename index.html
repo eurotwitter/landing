@@ -5,185 +5,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Eurotwitter</title>
     <style>
-        .pulse {
-            animation: pulse-animation 5s infinite;
+        :root {
+        --primary-color: #777;
+        --secondary-color: #333;
+        --foo: red;
+        --font-family: 'Arial', sans-serif;
+        --header-font-size: 24px;
+        --rounding: 2em
         }
 
-        @keyframes pulse-animation {
-            0% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.2);
-                border-radius: 2em;
-                box-shadow: red 2px 2px 5px;
-            }
-
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .wrapper {
-            margin: 2em;
+        body {font-family: 'Lato', sans-serif; }
+        .centered {
             text-align: center;
+            font-style: italic;
         }
-
-        body {
-            margin: 0px;
-            padding: 0px;
+        .rounded-slug {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: var(--rounding);
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-left: 2vw;
+            margin-right: 2vw;
         }
-
-        ul {
-            list-style-type: none;
-        }
-
-        div.header {
-            background-color: #003399;
-            color: #FFCC00;
-            padding: .5em;
-            margin: 1em;
-            text-shadow: black 2px 2px 5px;
-            border-radius: 2em;
-        }
-
-        /* div.ascii-image{
-        font-size: .5vh;
-      } */
-        div.trade-offer {
-            background-image: linear-gradient(#710ce0, black);
-            color: #df8e80;
-            width: fit-content;
-            font-size: 1vw
-        }
-
-        div.trade-container {
-            flex: content;
+        @media screen and (min-width: 720px) {
+        .container {
+            
             display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-around
+            columns: 2;
+
+        }
         }
 
-        span.caution {
-            color: gold;
-            background-color: black;
+        div.outline {
+            margin: 2em;
+            min-width: 20em
+        }
+        .outline li {
+            margin-top: .5em;
+            margin-bottom: .5em;
         }
 
-        div.offer {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            height: fit-content;
-            color: black;
-            text-shadow: red 2px 1px 5px;
-            text-align: left;
-            font-size: 3vw;
+        div.header.h1 {
+            font-weight: 700; 
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 2px;
         }
-
-        div.trade-offer-label {
-            font-size: 5vh;
-            background-color: #FF4444;
-            color: white;
-            text-align: center;
+        div.header.p{
+            color: var(--primary-color); font-size: 18px; margin: 10px 0;
+        }
+        #freedom-from-link-arbor{
+            border: solid 2px var(--primary-color);
+            margin: 2em;
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+        #freedom-from-link-arbor > ol > li {
+            margin-bottom: 1em;
+            padding-left: 2em;
         }
     </style>
-</head>
-
 <body>
     <div class="wrapper">
-
         <div class="header">
-            <h1>
-                Eurotwitter
-            </h1>
+            <div style="background-color: #f1f1f1; padding: 20px; text-align: center;">
+                <h1 style="font-weight: 700; color: #333; font-size: 36px; margin: 0; letter-spacing: 2px; color: #333">Eurotwitter (Free yourself from platforms)</h1>
+                <p style="font-family: 'Arial', sans-serif; color: #777; font-size: 18px; margin: 10px 0;">Embrace Freedom: Break Free from Platforms and Rediscover Digital Independence</p>
+              </div>
         </div>
+        <br/>
+        <div class="container" >
+            <div class="outline">
+                <h3> Index: </h3>
+                <ul>
+                    <li>
+                        <a href="#freedom-from-link-arbor">Guide for a place for linking </a>
+                    </li>
+                    <li>
+                        <a href="#what-is-this">What is this?</a>
+                    </li>
+                    <li>
+                        More freedom is coming soon...  
+                    </li>
+                </ul>
+                <p>
+                    Have ideas about robust connections for humanity? You can reach me on at an unrelated social media site:
+                    <ul>
+                        <a href="https://twitter.com/carlburks"> Twitter @carlburks</a>
+                    </ul>
+                </p>
+            </div>
+            <div class="rounded-slug">
+                <div class="centered">
+                    <h2><strong>Do you have a landing page for your online presence?</strong> </h2>
+                </div>
+    
+                <p class="elevator-pitch">
+    
+                
+                    Take control of your brand and create a personalized website that truly represents you! 
+                    With your own site, you have the freedom to design a unique experience, showcase your 
+                    content in a way that aligns with your vision, and stand out from the crowd. 
+                    Unlike an unnamed service, which offers limited customization options, 
+                    building your own website allows you to fully express your brand's personality 
+                    and tailor it to your audience. You have the flexibility to include not just links, 
+                    but also rich multimedia, contact forms, e-commerce capabilities, and more. 
+                    Plus, having your own website establishes credibility, enhances your online identity, 
+                    and gives you full ownership and control over your content. 
+                </p>
+                <p>
+                    Don't settle for a one-size-fits-all solution—build your own site and make a 
+                    lasting impression on your visitors!
+    
+                </p>
+    
+            </div>
+    
+        </div>
+
+        <div id="freedom-from-link-arbor">
+
         <h2>
-            Are you interested in purchasing this domain?
+            Here's a simplified step-by-step guide to purchasing a domain, 
+            setting up a static webpage on GitHub (or GitLab), and using it as an alternative to a 3rd Party Link site:
         </h2>
-        Follow me at the completely unrelated an unaffiliated social media site twitter:
-        <a href="https://twitter.com/CarlBurks">
-            https://twitter.com/CarlBurks
-        </a>
-    </div>
-    <br />
-
-    <br />
-
-    <div class="trade-container-center">
-        <div class="trade-offer-label">
-            <span class="caution">⚠</span>TRADE OFFER<span class="caution">⚠</span>
+        <ol>
+            <li>Purchase a domain: Start by choosing and purchasing a domain name from a domain registrar like GoDaddy, Namecheap, or Google Domains. A domain name is the address that people will use to access your webpage (e.g., www.yourname.com).</li>
+            <li>Sign up for a GitHub or GitLab account: Create an account on either GitHub (www.github.com) or GitLab (www.gitlab.com). These platforms allow you to host and manage your website's code.</li>
+            <li>Create a new repository: In your GitHub or GitLab account, create a new repository specifically for your website. Give it a name like "yourname.github.io" (for GitHub) or "yourname.gitlab.io" (for GitLab). This special naming convention is required for hosting a static webpage on these platforms.</li>
+            <li>Design your webpage: Create an HTML file (e.g., index.html) that will serve as the main content of your webpage. You can use a simple text editor like Notepad or a code editor like Visual Studio Code to write your HTML code. Add your desired content, such as links to your social media profiles or other websites.</li>
+            <li>Upload your webpage: Once your HTML file is ready, go to your GitHub or GitLab repository and upload the file to the repository. If using GitHub, you can directly drag and drop the file into the repository's file list. If using GitLab, you'll need to use Git commands or the web interface to push the file to the repository.</li>
+            <li>Enable GitHub Pages or GitLab Pages: Now, go to your repository settings and look for the option to enable GitHub Pages (in GitHub) or GitLab Pages (in GitLab). This feature allows you to publish your webpage to a live website. Choose the branch or directory containing your HTML file as the source for your webpage.</li>
+            <li>Set up your domain: Go back to your domain registrar's website and look for DNS (Domain Name System) settings or domain management options. Locate the section where you can configure DNS records.</li>
+            <li>Configure DNS records: Add a new DNS record, typically called a CNAME record or an ALIAS record, depending on your domain registrar's terminology. In the record settings, point the record to your GitHub Pages or GitLab Pages URL. It will usually look like "yourname.github.io" or "yourname.gitlab.io". Save the changes.</li>
+            <li>Wait for DNS propagation: After configuring the DNS records, it may take some time (usually a few minutes to a few hours) for the changes to propagate across the internet. This process allows your domain to correctly point to your GitHub or GitLab Pages.</li>
+            <li> Test your webpage: Once the DNS propagation is complete, open a web browser and type your domain name (e.g., www.yourname.com). You should see your static webpage displayed with the content you added. Test the links on the page to ensure they are working correctly.</li>
+        </ol>
         </div>
-        <div class="trade-container">
-            <div class="offer">
-                <div class="trade-header">I RECEIVE:</div>
-                <ul>
-                    <li>
-                        Tesla Model 3
-                    </li>
-                    <li>
-                        $200,000 USD
-                    </li>
-                </ul>
-            </div>
-            <div class="ascii-image trade-offer pulse">
-                <pre>
-.......................'.. .'''''''''''...''''''
-.''''''''''''''''''''''','.....'''''''.'..''',,,
-c::;''''''''''''',,'..          ..'''''''''',,,,
-,,;cccc:;,''''''''.      .....    ...,,,''',,,;:
-,,,,,,,,:cccc:'..  .';;::cc:::;,.  :c:;,llcccccc
-,,,,,,,,,,,,,:c:. .;:cclllllcc:;'. .;;,,,,,,,,,,
-''''',,,,,,,,,,. .,;:cclooolc:;,'.. .,,,,,,,,,,,
-'''''',''',,,,,. .:lclccldccclcc;..  ',,,,,,,,,,
-',,''''''''',,'..,cc:;::cl;;:;;:c'.  .,,,,,,,,,,
-,,,,,''''''''',c;;cooooclo:cllll:,.;...,,,,,,,,,
-,,,,,,''''''''.,:,lodxdcdd:lxxol:.,:..',,,,,,,,,
-,,,,,''''''''.  .'clodo:cc:lddlc,.,. '''''''',',
-,,,,,'''''''.    .,cl:::cc;;:cc,.    ...''''.'..
-,,,,,''''''.      .colllcccclc:.      .....''.'.
-,,,,,'''''.        ';clodocc;'..       . .......
-,,,,,''''..       ;:,',;c;'...',         . .....
-,,,,''''''.      .okoc,,,''..,;c.      ..... .
-,,,''''......  ...dO0kl:::cclldc.      ....
-..................cOOO0xclxdkol:.        .
-'''''''''''''.....'xkxxodkk,oOd;.     ........
-,,,,,,''''''''.....cddx00d. 'oxk;.    ..........
-',,,,,,'''''......'ldOKkc;dxxkodkl.   ..........
-',,,'''''''......:dOKOlcdkOd:dkdoxc. ...........
-'''''''''''....cox0kookOkc,:c;oOkoo;............
-'''''''''....'ldkOodk0kc,'.'llclkkdl:...........
-''''''''....,lkOkdkkkl'','.'dc:ccdxoll..........
-'''''......;oxkxxkkd''',;,.,l;xo:;oxol:.........
-'........'coodxkO00o.':clodxx,;oolclxol;........
-........'lloddxkkxoodxkOOkxd,..'odo::olc,.......
-    </pre>
-            </div>
-            <div class="offer">
-                <div class="trade-header">YOU RECEIVE:</div>
-                <ul>
-                    <li>
-                        This domain
-                    </li>
-                </ul>
-            </div>
+
+        <div id="what-is-this">
+            
+        <h2>
+            This isn't a platform
+        </h2>
+        <p>
+            Platforms want to build walled gardens.
+        </p><p>
+            They want you to stay in their gated community.
+        </p><p>
+            Let's make bridges to all the communities we care about and provide an index to communicate.
+        </p>
+        <h2>
+            Online Presence?
+        </h2>
+    <p>
+        Leave the phones at home.
+    </p>
+    <p>
+        Why not embrace real-world connections? Engage in meaningful conversations by setting up meetings with people you know in public, safe locations. Challenge ideas, encourage debates, and foster understanding.
+    </p><p>
+        
+        Instead of living in a world of disconnected fantasies and isolation, let ideas flow freely. Break free from the confines of slogans and connect with the humanity in others, rather than being defined solely by political identities that can stifle independent thinking.
+    </p><p>
+        
+        By actively participating in face-to-face interactions, you reclaim your autonomy and prevent others from shaping your thoughts. Embrace the power of genuine human connections and take control of your intellectual journey.
+    </p>
+        <h2>
+
+        </h2>
         </div>
-    </div>
-    <div>
-        <p>
-            An 💩<span
-                title="If you are interested and agree to the price please reply with a 💩 to confirm acceptance.">offer</span>
-            was accepted 03/27/2023 by an official twitter <span title="press@twitter.com">email address</span>.
-        </p>
-        <p>
-            🚗 More information soon! 🚗
-        </p>
-    </div>
-    <br />
-    <a style="position: fixed;right:1em;bottom:1em" href="https://www.twitter.com/CarlBurks">π</a>
+
 </body>
 
 </html>
