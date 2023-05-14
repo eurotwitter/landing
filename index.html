@@ -60,15 +60,25 @@
         div.header.p{
             color: var(--primary-color); font-size: 18px; margin: 10px 0;
         }
+
         #freedom-from-link-arbor{
             border: solid 2px var(--primary-color);
-            margin: 2em;
-            padding-left: 3em;
-            padding-right: 3em;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+        @media screen and (min-width: 720px) {
+ 
+            #freedom-from-link-arbor{
+                margin: 2em;
+            }
+            #freedom-from-link-arbor > ol > li {
+                padding-left: 2em;
+            }
         }
         #freedom-from-link-arbor > ol > li {
+            padding-left: 1em;
             margin-bottom: 1em;
-            padding-left: 2em;
         }
     </style>
 <body>
